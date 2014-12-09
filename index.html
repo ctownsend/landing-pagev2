@@ -1,0 +1,540 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Responsive Bootstrap App Landing Page Template">
+    <meta name="keywords" content="Kane, Bootstrap, Landing page, Template, App, Mobile">
+    <meta name="author" content="Mizanur Rahman">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- SITE TITLE -->
+    <title>Zipkick</title>
+    <!-- =========================
+          FAV AND TOUCH ICONS
+    ============================== -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- =========================
+         STYLESHEETS
+    ============================== -->
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="assets/elegant-icons/style.css">
+    <link rel="stylesheet" href="assets/app-icons/styles.css">
+    <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+    <!-- WEB FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+    <!-- CAROUSEL AND LIGHTBOX -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- CUSTOM STYLESHEETS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- COLORS -->
+    <link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+    <!-- <link rel="stylesheet" href="css/colors/red.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/green.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/purple.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/orange.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/slate.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+    <!-- RESPONSIVE FIXES -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--alterd style thing-->
+    <style>
+        .panel-title {
+            color: white;
+        }
+
+        .panel {
+            background-color: #008ed6;
+        }
+
+        .panel-body {
+            background-color: white;
+            color: #313131;
+        }
+
+        #amenities {
+            text-align: justify;
+        }
+
+        .highlight {
+            background: #63BDEA;
+        }
+
+        .amenity-options {
+            text-align: left;
+            width: 215px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h3#amenities {
+            text-align: inherit;
+        }
+    </style>
+    <!--end checkbox thing-->
+    <!-- JQUERY -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- =========================
+         PRE LOADER
+    ============================== -->
+    <div class="preloader">
+        <div class="status">&nbsp;</div>
+    </div>
+    <!-- =========================
+         HEADER
+    ============================== -->
+    <header class="header" id="home">
+        <!-- COLOR OVER IMAGE -->
+        <div class="color-overlay">
+            <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+            <!-- STICKY NAVIGATION -->
+            <div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- LOGO ON STICKY NAV BAR -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="images/logo-black.png" alt=""></a>
+                    </div>
+                    <!-- NAVIGATION LINKS -->
+                    <div class="navbar-collapse collapse" id="kane-navigation">
+                        <ul class="nav navbar-nav navbar-right main-navigation">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#see">See Zipkick</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- /END CONTAINER -->
+            </div> <!-- /END STICKY NAVIGATION -->
+            <!-- CONTAINER -->
+            <div class="container">
+                <!-- ONLY LOGO ON HEADER -->
+                <div class="only-logo">
+                    <div class="navbar">
+                        <div class="navbar-header">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                    </div>
+                </div> <!-- /END ONLY LOGO ON HEADER -->
+                <div class="row home-contents">
+                    <div class="col-md-6 col-sm-6">
+                        <!-- HEADING AND BUTTONS -->
+                        <div class="intro-section">
+                            <!-- WELCOM MESSAGE -->
+                            <h1 class="intro">Personalize travel plans, instantly.</h1>
+                            <h5>Beta release available</h5>
+                            <!-- BUTTON -->
+                            <div class="buttons" id="download-button">
+                                <a href="#download" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>Request Invite</a>
+                            </div>
+
+                            <!-- /END BUTTONS -->
+                        </div>
+                        <!-- /END HEADNING AND BUTTONS -->
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 hidden-xs">
+                        <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
+                        <div class="phone-image">
+                            <img src="images/2-iphone-right.png" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- /END ROW -->
+            </div>
+            <!-- /END CONTAINER -->
+        </div>
+        <!-- /END COLOR OVERLAY -->
+    </header>
+    <!-- /END HEADER -->
+    <!-- =========================
+         FEATURES
+    ============================== -->
+    <section class="features" id="see">
+        <div class="container">
+            <!-- SECTION HEADER -->
+            <div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                <!-- SECTION TITLE -->
+                <h2 class="dark-text"><br>Be one of the first to experience curated travel booking.</h2>
+                <div class="colored-line">
+                </div>
+            </div>
+            <!-- /END SECTION HEADER -->
+
+            <div class="row">
+                <!-- FEATURES LEFT -->
+                <div class="col-md-12 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                    <!-- FEATURE -->
+                    <div class="feature">
+
+
+                        <!-- PHONE IMAGE -->
+                        <div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <img src="images/single-iphone.png" alt="">
+                        </div>
+
+
+                    </div>
+                    <!-- /END ROW -->
+                </div>
+                <!-- /END CONTAINER -->
+    </section>
+    <!-- /END FEATURES SECTION -->
+    <!-- =========================
+         BRIEF LEFT SECTION
+    ============================== -->
+    <section class="app-brief grey-bg" id="features">
+        <div class="container">
+            <div class="row">
+                <!-- PHONES IMAGE -->
+                <div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+                    <div class="phone-image">
+                        <img src="images/2-iphone-left.png" alt="">
+                    </div>
+                </div>
+                <!-- RIGHT SIDE WITH BRIEF -->
+                <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                    <!-- SECTION TITLE -->
+                    <h2 class="dark-text">Features</h2>
+                    <div class="colored-line-left">
+                    </div>
+                    <p>
+                        Zipkick is a travel search and booking site that brings unique, relevant results to users across all platforms. With limited space on mobile devices, we aim to remove the clutter of irrelevant search results and provide information based on customer preference ranking. Users now have the ability to find what's relevant without scroll bars, radio buttons or searching thousands of different options through a simple and repeatable process.
+                    </p>
+                    <!-- FEATURE LIST -->
+                    <ul class="feature-list">
+
+                        <li><i class="icon_adjust-vert"></i> Easily customize preferences</li>
+                        <li><i class="icon_check_alt2"></i> Search & Book in just a couple of clicks</li>
+                        <li><i class="icon_lock_alt"></i> Reliable and Secure Platform</li>
+
+
+
+                    </ul>
+                </div>
+                <!-- /END RIGHT BRIEF -->
+            </div>
+            <!-- /END ROW -->
+        </div>
+        <!-- /END CONTAINER -->
+    </section>
+    <!-- /END SECTION -->
+    <!-- =========================
+         DOWNLOAD NOW
+    ============================== -->
+    <section class="download" id="download">
+        <div class="color-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+
+                        <!-- SUBSCRIPTION FORM WITH TITLE -->
+                        <div class="subscription-form-container">
+                            <h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">What are Your Travel Accommodation Preferences?</h2>
+                            <div id="pref-choice-container">
+                                <span style="color:#FFFFFF">(Select 3 Preferences)</span>
+                                <div>
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title preference" id="0">
+                                            1. Preference
+                                        </h3>
+                                    </div>
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title preference" id="1">
+                                            2. Preference
+                                        </h3>
+                                    </div>
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title preference" id="2">
+                                            3. Preference
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================ NEW-->
+                            <div id="pref-avail-container" style="display:none;">
+                                <form id="selector">
+                                    <ul class="panel-group" id="accordion invite">
+                                        <li class="panel pref-choice prices">
+                                            <a class="accordion-toggle selection" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" value="lowestPrice" name="prices">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title" id="prices">
+                                                        Lowest Price
+                                                    </h3>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="panel pref-choice roomcount">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title" id="roomcount">
+                                                        Number of Rooms
+                                                    </h3>
+                                                </div>
+                                            </a>
+                                            <div id="collapseTwo" class="panel-collapse collapse">
+                                                <div class="panel-body  brand-font-secondary">
+                                                    <input class="selection css-radio" type="radio" name="roomcount" value="room1" id='room1'></input>
+                                                    <label for="room1" class="css-label">1</label>
+                                                    <input class="selection css-radio" type="radio" name="roomcount" value="room2" id='room2'></input>
+                                                    <label for="room2" class="css-label">2</label>
+                                                    <input class="selection css-radio" type="radio" name="roomcount" value="room3" id='room3'></input>
+                                                    <label for="room3" class="css-label">3</label>
+                                                    <input class="selection css-radio" type="radio" name="roomcount" value="room4" id='room4'></input>
+                                                    <label for="room4" class="css-label">4</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="panel pref-choice guestcount">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title" id="guestcount">
+                                                        Number of Guests
+                                                    </h3>
+                                                </div>
+                                            </a>
+                                            <div id="collapseThree" class="panel-collapse collapse">
+                                                <div class="panel-body  brand-font-secondary">
+                                                    <input class="selection css-radio" type="radio" name="guestcount" value="guest1" id='guest1'></input>
+                                                    <label for="guest1" class="css-label">1</label>
+                                                    <input class="selection css-radio" type="radio" name="guestcount" value="guest2" id='guest2'></input>
+                                                    <label for="guest2" class="css-label">2</label>
+                                                    <input class="selection css-radio" type="radio" name="guestcount" value="guest3" id='guest3'></input>
+                                                    <label for="guest3" class="css-label">3</label>
+                                                    <input class="selection css-radio" type="radio" name="guestcount" value="guest4" id='guest4'></input>
+                                                    <label for="guest4" class="css-label">4</label>
+                                                </div>
+                                        </li>
+                                        <li class="panel pref-choice hotelcount">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title" id="hotelcount">
+                                                        Hotel Star Rating
+                                                    </h3>
+                                                </div>
+                                            </a>
+                                            <div id="collapseFour" class="panel-collapse collapse">
+                                                <div class="panel-body brand-font-secondary">
+                                                    <input class="selection css-radio" type="radio" name="hotelcount" value="class1" id='hotel1'></input>
+                                                    <label for="hotel1" class="css-label">1</label>
+                                                    <input class="selection css-radio" type="radio" name="hotelcount" value="class2" id='hotel2'></input>
+                                                    <label for="hotel2" class="css-label">2</label>
+                                                    <input class="selection css-radio" type="radio" name="hotelcount" value="class3" id='hotel3'></input>
+                                                    <label for="hotel3" class="css-label">3</label>
+                                                    <input class="selection css-radio" type="radio" name="hotelcount" value="class4" id='hotel4'></input>
+                                                    <label for="hotel4" class="css-label">4</label>
+                                                    <input class="selection css-radio" type="radio" name="hotelcount" value="class5" id='hotel5'></input>
+                                                    <label for="hotel5" class="css-label">5</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="panel pref-choice tripadvisor">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title" id="tripadvisor">
+                                                        Trip Advisor Star Rating
+                                                    </h3>
+                                                </div>
+                                            </a>
+                                            <div id="collapseFive" class="panel-collapse collapse">
+                                                <div class="panel-body  brand-font-secondary">
+                                                    <input type="radio" name="tripadvisor" value="rate1" id="rate1" class="selection css-radio" />
+                                                    <label for="rate1" class="css-label">1</label>
+                                                    <input type="radio" name="tripadvisor" value="rate2" id="rate2" class="selection css-radio" />
+                                                    <label for="rate2" class="css-label">2</label>
+                                                    <input type="radio" name="tripadvisor" value="rate3" id="rate3" class="selection css-radio" />
+                                                    <label for="rate3" class="css-label">3</label>
+                                                    <input type="radio" name="tripadvisor" value="rate4" id="rate4" class="selection css-radio" />
+                                                    <label for="rate4" class="css-label">4</label>
+                                                    <input type="radio" name="tripadvisor" value="rate5" id="rate5" class="selection css-radio" />
+                                                    <label for="rate5" class="css-label">5</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="panel pref-choice amenities">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                                <div class="panel-heading">
+                                                    <h3 id="amenities" class="panel-title">
+                                                        Amenities
+                                                    </h3>
+                                                </div>
+                                            </a>
+                                            <div id="collapseSix" class="panel-collapse collapse">
+                                                <div class="panel-body  brand-font-secondary">
+                                                    <div class="amenity-options">
+
+                                                        <input type="checkbox" name="amenities" value="valetParking" id="valetParking" class="css-checkbox" />
+                                                        <label for="valetParking" class="css-labelbox">Valet Parking</label> <br />
+                                                        <input type="checkbox" name="amenities" value="parkingGarage" id="parkingGarage" class="css-checkbox" />
+                                                        <label for="parkingGarage" class="css-labelbox">Parking Garage</label> <br />
+                                                        <input type="checkbox" name="amenities" value="continentalBreakfast" id="continentalBreakfast" class="css-checkbox" />
+                                                        <label for="continentalBreakfast" class="css-labelbox">Continental Breakfast</label> <br />
+                                                        <input type="checkbox" name="amenities" value="inHouseDining" id="inHouseDining" class="css-checkbox">
+                                                        <label for="inHouseDining" class="css-labelbox">In House Dining</label> <br />
+                                                        <input type="checkbox" name="amenities" value="inHouseBar" id="inHouseBar" class="css-checkbox">
+                                                        <label for="inHouseBar" class="css-labelbox">In House Bar</label> <br />
+                                                        <input type="checkbox" name="amenities" value="fitnessFacility" id="fitnessFacility" class="css-checkbox">
+                                                        <label for="fitnessFacility" class="css-labelbox">Fitness Facility</label> <br />
+                                                        <input type="checkbox" name="amenities" value="handicapAccessible" id="handicapAccessible" class="css-checkbox">
+                                                        <label for="handicapAccessible" class="css-labelbox">Handicap Accessible</label> <br />
+                                                        <input type="checkbox" name="amenities" value="childrenAllowed" id="childrenAllowed" class="css-checkbox">
+                                                        <label for="childrenAllowed" class="css-labelbox">Children Allowed</label> <br />
+                                                        <input type="checkbox" name="amenities" value="petsAllowed" id="petsAllowed" class="css-checkbox" />
+                                                        <label for="petsAllowed" class="css-labelbox">Pets Allowed</label> <br />
+                                                        <input type="checkbox" name="amenities" value="indoorPool" id="indoorPool" class="css-checkbox">
+                                                        <label for="indoorPool" class="css-labelbox">Indoor Pool</label> <br />
+                                                        <input type="checkbox" name="amenities" value="outdoorPool" id="outdoorPool" class="css-checkbox">
+                                                        <label for="outdoorPool" class="css-labelbox">Outdoor Pool</label> <br />
+                                                        <input type="checkbox" name="amenities" value="nonSmokingRooms" id="nonSmokingRooms" class="css-checkbox">
+                                                        <label for="nonSmokingRooms" class="css-labelbox">Non Smoking Room</label> <br />
+                                                        <input type="checkbox" name="amenities" value="airportTransportation" id="airportTransportation" class="css-checkbox">
+                                                        <label for="airportTransportation" class="css-labelbox">Airport Transportation </label> <br />
+                                                        <div style="margin-top:10px;text-align:center;">
+                                                            <button id="amenity" type="button" class="multi-selection" value="amenities">Complete Selection</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--<button id='clear' type="reset">ClearAll</button>-->
+                                </form>
+                            </div>
+                            <!--No more new-->
+                            <!-- SUBSCRIBE BUTTON -->
+                            <button type="button" id="submit-preferences" class="btn btn-default standard-button" style="display:none;">Send</button>
+                            
+                            <!-- /END MAILCHIMP FORM STARTS -->
+                            <!-- =====================
+                            LOCAL TXT FORM STARTS
+                            ===================== -->
+                            <!-- THIS FORM IS COMMENTED TO HIDE
+
+                            <form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+
+                              <h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
+                              <h4 class="subscription-error">Something Wrong!</h4>
+
+                              <input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+
+                              <button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+
+
+                            -->
+                            <!-- / LOCAL TXT SAVING FORM END -->
+                        </div>
+                        <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+                        <div class="complete-message" style="text-align:center; display:none;">
+                            <p>Great, you're all set, we'll be in touch shortly. Thanks, and happy travels!</p>
+                        </div>
+                    </div>
+                    <!-- END COLUMN -->
+                </div>
+                <!-- END ROW -->
+            </div>
+            <!-- /END CONTAINER -->
+        </div>
+        <!-- /END COLOR OVERLAY -->
+    </section>
+    <!-- /END DOWNLOAD SECTION -->
+    <!-- =========================
+         FOOTER
+    ============================== -->
+    <footer>
+        <div class="container">
+            <div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
+                <a class="btn contact-button expand-form"><i class="icon_mail_alt"></i></a>
+                <!-- EXPANDED CONTACT FORM -->
+                <div class="row expanded-contact-form">
+                    <div class="col-md-8 col-md-offset-2">
+                        <!-- FORM -->
+                        <form class="contact-form" id="contact" role="form">
+                            <!-- IF MAIL SENT SUCCESSFULLY -->
+                            <h4 class="success">
+                                <i class="icon_check"></i> Your message has been sent successfully.
+                            </h4>
+                            <!-- IF MAIL SENDING UNSUCCESSFULL -->
+                            <h4 class="error">
+                                <i class="icon_error-circle_alt"></i> E-mail must be valid and message must be longer than 1 character.
+                            </h4>
+                            <div class="col-md-6">
+                                <input class="form-control input-box" id="name" type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control input-box" id="email" type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="col-md-12">
+                                <input class="form-control input-box" id="subject" type="text" name="subject" placeholder="Subject">
+                                <textarea class="form-control textarea-box" id="message" rows="8" placeholder="Message"></textarea>
+                            </div>
+                            <button class="btn btn-primary standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">Send Message</button>
+                        </form>
+                        <!-- /END FORM -->
+                    </div>
+                </div>
+                <!-- /END EXPANDED CONTACT FORM -->
+            </div>
+            <!-- /END CONTACT BOX -->
+            <!-- LOGO -->
+            <img src="images/logo-black.png" alt="LOGO" class="responsive-img">
+            <!-- SOCIAL ICONS -->
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/Zipkick"><i class="social_facebook_square"></i></a></li>
+                <li><a href="https://twitter.com/zipkick"><i class="social_twitter_square"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/zipkick"><i class="social_linkedin_square"></i></a></li>
+                <li><a href="http://instagram.com/zipkick"><i class="social_instagram_square"></i></a></li>
+            </ul>
+            <!-- COPYRIGHT TEXT -->
+            <p class="copyright">
+                ©2014 Zipkick, All Rights Reserved
+            </p>
+        </div>
+        <!-- /END CONTAINER -->
+    </footer>
+    <!-- /END FOOTER -->
+    <!-- =========================
+         SCRIPTS
+    ============================== -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/simple-expand.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/retina-1.1.0.min.js"></script>
+    <script src="js/matchMedia.js"></script>
+    <script src="js/jquery.backgroundvideo.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
